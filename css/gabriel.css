@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', sans-serif;
+    color: black;
+}
+
+.head_cont
+{
+    height: 100vh;
+    width: 100%;
+    background-color: cyan;
+    background-image: url('https://i.redd.it/5c3sq3yvbe671.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+
+h1
+{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2
+{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+.social
+{
+    margin-top: 1rem;
+    display: flex;
+}
+.social a
+{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    padding: 1rem 4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5 ease-in-out;
+}
+a:hover
+{
+    background-color: white;
+}
+
+
+.checkbox_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox
+{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+.checkbox .trace
+{
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    border-radius: 100%;
+    transition: 0.5s ease-in-out;
+}
+.checkbox .trace:nth-child(1)
+{
+    top: 26px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2)
+{
+    top: 46px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3)
+{
+    top: 66px;
+    transform: rotate(0);
+}
+#toggle
+{
+    display: none;
+}
+
+
+.menu
+{
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 0px white;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu_item
+{
+    position: fixed;
+    top: 0;
+    right: 1%;
+    width: 60%;
+    height: 40%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in 0.5s;
+    transition: 400ms ease-out 0s;
+}
+.menu_item li:hover
+{
+    text-decoration: 2px underline;
+}
+.menu_item ul
+{
+    list-style-type: circle;
+}
+
+.menu_item ul li a
+{
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+
+#toggle:checked + .checkbox .trace:nth-child(1)
+{
+    transform: rotate(45deg);
+    top: 47px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2)
+{
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+#toggle:checked + .checkbox .trace:nth-child(3)
+{
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+#toggle:checked + .checkbox
+{
+    background-color: white;
+}
+
+#toggle:checked ~ .menu
+{
+    box-shadow: 30px 10px 0px 15vmax white;
+    z-index: 1;
+}
+#toggle:checked ~ .menu_item
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.cont
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.card_container
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.card
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cyan;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
+}
+
+.card_text
+{
+    opacity: 0;
+    font-size: 200%;
+    width: 50%;
+    letter-spacing: 1px;
+    color: rgb(56, 56, 56);
+    transition: 1s ease-out;
+}
+
+.card:hover~ .card_text
+{
+    opacity: 1;
+    transition: 2s ease-in-out;
+}
+
+
+.card_wrapper
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card_wrapper::before
+{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 2px solid white;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.card_wrapper h2
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card_wrapper p
+{
+    font-size: 0;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover
+{
+    filter: unset;
+}
+
+.card:hover > .card_wrapper::before
+{
+    height: 250px;
+    width: 250px;
+    opacity: 1;
+}
+.card:hover > .card_wrapper p
+{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
+
+.pe
+{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+#link-topo
+{
+    text-decoration: none;
+    color: white;
+    background-color: cyan;
+    padding: 15px;
+    border-radius: 100%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.port
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3
+{
+    font-size: 30px;
+    width: 670px;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}

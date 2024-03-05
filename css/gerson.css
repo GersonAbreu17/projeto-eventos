@@ -1,0 +1,197 @@
+*
+{
+    font-family: 'Sono', sans-serif;
+}
+
+#menu
+{
+    background-color: rgb(219, 219, 219);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+body
+{
+    background: rgb(0,6,117);
+    background: radial-gradient(circle, rgba(0,6,117,1) 0%, rgba(0,110,113,1) 52%, rgba(0,119,34,1) 100%);
+}
+
+.item
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(143, 143, 143);
+    font-size: 26px;
+    color: black;
+    font-weight: 1000;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.item > p {padding: 3px 3px 3px 3px;}
+
+#secini
+{
+    top: 100px;
+    left: 3%;
+    position: absolute;
+    background-color: rgb(219, 219, 219);
+    height: 86%;
+    width: 93%;
+    border-radius: 15px;
+}
+
+#fotodiv
+{
+    position: absolute;
+    top: 2.5%;
+    left: 1%;
+    width: 31%;
+    float: left;
+}
+
+#foto
+{
+    width: 100%;
+    border-radius: 15px;
+}
+
+#divini
+{
+    position: absolute;
+    top: 2.5%;
+    left: 33%;
+    border-radius: 15px;
+    border-color: rgb(0, 0, 0);
+    border-style: ridge;
+    width: 66%;
+    float: right;
+    font-size: 40px;
+    text-align: center;
+    height: 94%;
+}
+
+#list1
+{
+    text-align: left;
+    position: absolute;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: center;
+    top: 28%;
+    left: 17%;
+    line-height: 300%;
+}
+
+#fundo2
+{
+    background-color: rgba(0, 0, 0, 0.267);
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+}
+
+.sec
+{
+    background-color: rgba(0, 0, 0, 0.63);
+    
+    color: white;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    width: 91.5%;
+    margin-left: 3%;
+}
+
+
+.titulo
+{
+    font-size: 35px;
+}
+.parag
+{
+    font-size: 30px;
+}
+
+#f3
+{
+    background-color: rgba(0, 0, 0, 0.63);
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+.opcoes > a
+{
+    color: white;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.123);
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.ancora
+{
+    position: relative;
+    top: -100px;
+}
+
+#voltar
+{
+    position: fixed;
+    top: 92.7%;
+    left: 96.3%;
+    background-color: rgba(255, 255, 255, 0.685);
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 39px;
+    box-shadow: 3px 3px 3px black;
+}
+
+#voltar > div
+{
+    top: 34%;
+    left: 28.5%;
+    position: absolute;
+    padding: 20%;
+    box-shadow: 2px -2px 0 1px #000 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(135deg);
+}
+
+td
+{
+    font-size: 30px;
+    border: 1px inset rgb(255, 255, 255);
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+table
+{
+    margin-bottom: 1%;
+}

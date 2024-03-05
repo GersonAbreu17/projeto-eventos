@@ -1,0 +1,134 @@
+
+*
+{
+    color:  rgb(232, 223, 224);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body
+{
+    background-color: rgb(14, 10, 24);
+}
+
+h1
+{
+    font-size: 60px;
+}
+
+p
+{
+    font-size: 30px;
+}
+
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.808);
+    border-bottom: 0.5px solid rgb(232, 223, 224);
+    position: fixed;
+}
+
+header > div
+{
+    display: flex;
+    width: 97.1%;
+    flex-flow: row wrap;
+}
+
+header > a > img
+{
+    width: 2.7%;
+    float: left;
+    margin: 0.1% 0.1% 0.1% 0.1%;
+}
+
+#linksmenu
+{
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 0.45%;
+    margin-bottom: 0.45%;
+}
+
+#linksmenu > div
+{
+    border: 0.5px solid rgb(163, 58, 203);
+    border-radius: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h2
+{
+    margin-top: 8.5%;
+    text-align: center;
+    font-size: 150px;
+}
+
+section
+{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem
+{
+    border-radius: 20px;
+}
+
+.texto
+{
+    width: 90%; 
+}
+
+li
+{
+    font-size: 30px;
+}
+
+table
+{
+    font-size: 150%;
+    width: 500px;
+    text-align: center;
+}
+
+menu
+{
+    position: fixed;
+    top: 7%;
+    left: 2%;
+    border-radius: 10px;
+    width: 18%;
+    border: 0.5px solid rgb(163, 58, 203);
+    font-size: 30px;
+}
+
+ul
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -30px;
+}
+table
+{
+    margin-bottom: 100px;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}

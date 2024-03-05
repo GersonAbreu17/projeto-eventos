@@ -1,0 +1,104 @@
+
+*
+{
+    color:  rgb(232, 223, 224);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body
+{
+    background-color: rgb(14, 10, 24);
+}
+
+h1
+{
+    font-size: 60px;
+}
+
+p
+{
+    font-size: 30px;
+}
+
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.808);
+    border-bottom: 0.5px solid rgb(232, 223, 224);
+    position: fixed;
+}
+
+header > div
+{
+    display: flex;
+    width: 97.1%;
+    flex-flow: row wrap;
+}
+
+header > a > img
+{
+    width: 2.7%;
+    float: left;
+    margin: 0.1% 0.1% 0.1% 0.1%;
+}
+
+#linksmenu
+{
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 0.45%;
+    margin-bottom: 0.45%;
+}
+
+#linksmenu > div
+{
+    border: 0.5px solid rgb(163, 58, 203);
+    border-radius: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h2
+{
+    margin-top: 8.5%;
+    text-align: center;
+    font-size: 150px;
+}
+
+section
+{
+    padding-top: 2.5%;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 15px;
+}
+
+.imagem
+{
+    border-radius: 20px;
+}
+
+.texto
+{
+    width: 90%;
+}
+
+body
+{
+    background: rgb(91,0,210);
+    background: linear-gradient(135deg, rgba(91,0,210,1) 0%, rgba(152,0,157,1) 50%, rgba(201,0,109,1) 100%);
+}

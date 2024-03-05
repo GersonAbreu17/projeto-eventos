@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css" type="text/css">
+</head>
+<body>
+    <section>
+        <form>
+            <div class="separar">
+                <label for="arquivo">Foto: &nbsp</label>
+                <input type="file" id="arquivo" class="branco" required="required">
+            </div>
+            
+            <div class="separar">
+                <label style="font-size: 20px;">Tipo de carreira:</label> 
+                <div>
+                    <label for="solo">Solo</label>
+                    <input type="radio" id="solo" name="carreira" class="preto" required="required">
+                    <label for="dupla">  &nbsp Dupla</label>
+                    <input type="radio" id="dupla" name="carreira" class="preto" required="required">
+                    <label for="banda">  &nbsp Banda</label>
+                    <input type="radio" id="banda" name="carreira" class="preto" required="required">
+                </div>    
+            </div>
+
+            <div class="separar">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" class="preto" size="20" required="required" placeholder="Digite um nome">
+            </div>
+
+            <div class="separar">
+                <label for="genero">Gênero musical: </label>
+                <input type="text" name="genero" class="preto" size="20" required="required" placeholder="Digite um gênero musical">
+            </div>
+
+            <div class="separar">
+                <label for="link">Link: </label>
+                <input type="url" name="link" class="preto" size="20" required="required" placeholder="Digite um link">
+            </div>
+
+            <div class="separar">
+                <input type="submit" class="preto" required="required">
+            </div>
+        </form>
+    </section>
+
+        <header>
+            <a href="/"><img src="/imagens/Pequeno.png" alt="Logotipo"></a>
+            <div id="linksmenu">
+                <div>
+                    <a href="https://wa.me/86988595011" target="_blank">Whatsapp</a>
+                </div>
+                <div>
+                    <a href="/cadastro">Cadastrar</a>
+                </div>
+
+                <div>
+                    <a href="/demais">Sobre</a>
+                </div>
+
+                <div>
+                    <a href="/portifolios">Portifólios</a>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
